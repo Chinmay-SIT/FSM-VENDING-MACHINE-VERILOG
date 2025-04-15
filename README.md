@@ -2,7 +2,6 @@
 
 This project involves the **design, simulation, and verification** of a Finite State Machine (FSM)-based vending machine using **Verilog Hardware Description Language (HDL)**. The system accepts predefined denominations and allows the user to select one of three products. It includes real-time balance calculation and handles extra cash scenarios efficiently. The design is simulated and validated using **Xilinx Vivado**.
 
----
 
 ## Project Description
 
@@ -17,7 +16,6 @@ Money denominations supported: **₹5, ₹10, ₹20**
 
 The system is modular, scalable, and synthesizable for FPGA targets. It supports real-time simulation and multiple transaction scenarios using a dedicated Verilog testbench.
 
----
 
 ## FSM Overview
 
