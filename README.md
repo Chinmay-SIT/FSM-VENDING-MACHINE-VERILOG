@@ -16,26 +16,15 @@ Money denominations supported: **₹5, ₹10, ₹20**
 
 The system is modular, scalable, and synthesizable for FPGA targets. It supports real-time simulation and multiple transaction scenarios using a dedicated Verilog testbench.
 
-
-## FSM Overview
-
-The core FSM includes the following states:
-- `IDLE`: Waits for input and initializes variables.
-- `CHECK_MONEY`: Compares inserted money with product cost.
-- `WAIT_EXTRA`: Waits for extra cash if the money is insufficient.
-- `DISPENSE_PRODUCT`: Dispenses the selected item if conditions are met.
-- `RETURN_BALANCE`: Returns any remaining balance after product delivery.
-
-
-## Process Flow
-
-The overall vending machine process follows this flow:
-
-1. User inserts money.
-2. Selects a product.
-3. System checks if the inserted money is enough.
-4. If not, waits for `extra_cash`.
-5. Dispenses product when conditions are met.
-6. Returns the balance (if any).
-
-
+The project leverages Verilog HDL to design a modular, synthesizable vending machine
+architecture. The logic is written to be FPGA-compatible, and the entire system is simulated using a
+testbench to validate functional correctness. The FSM includes the following primary states:
+- IDLE – Waiting for money input.
+- CHECK_AMOUNT – Validating the inserted money against the selected product
+price.
+- WAIT_FOR_EXTRA – Awaiting additional cash if the money is insufficient.
+- DISPENSE – Dispensing the selected product.
+- RETURN_BALANCE – Returning any extra money.
+The design ensures reusability, clarity, and scalability—making it suitable for extension to more
+complex real-world vending systems involving digital displays, stock tracking, and advanced
+payment methods such as NFC or QR code scanning.
