@@ -28,3 +28,15 @@ price.
 The design ensures reusability, clarity, and scalability—making it suitable for extension to more
 complex real-world vending systems involving digital displays, stock tracking, and advanced
 payment methods such as NFC or QR code scanning.
+
+## Hardware and Software Tools
+- Language: Verilog 
+- Simulation Tool: Xilinx Vivado
+- Waveform Viewer: Vivado Simulator
+
+## Methodology
+System Flow Overview
+To ensure a structured and predictable operation, the vending machine follows a predefined process.
+This is visualized in the flowchart below:
+![image](https://github.com/user-attachments/assets/ebfe7f39-d151-486e-8df5-6ebebd5c22de)
+
