@@ -82,4 +82,17 @@ Used to simulate and verify behavior under different scenarios:
 •	Adding extra cash
 The testbench mimics real user interactions, validating proper operation and state transitions of the FSM.
 
+## Results
+### Simulation Waveform Analysis
+From the Vivado simulation:
+•	The clock toggles every 10ns.
+•	Reset is asserted high and then deasserted to start the FSM.
+•	When money = 10 and select_product = 2'b10 (Tropicana Juice), the juice is dispensed and balance updates correctly.
+•	Extra cash and multiple transactions are correctly handled.
+
+### Waveform Example:
+
+![image](https://github.com/user-attachments/assets/8eb5994c-59a9-4e54-9402-6a8569ae67fc)
+
+
 
