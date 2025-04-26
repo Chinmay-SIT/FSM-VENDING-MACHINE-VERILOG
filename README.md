@@ -85,6 +85,7 @@ The testbench mimics real user interactions, validating proper operation and sta
 ## Results
 ### Simulation Waveform Analysis
 From the Vivado simulation:
+
 •	The clock toggles every 10ns.
 •	Reset is asserted high and then deasserted to start the FSM.
 •	When money = 10 and select_product = 2'b10 (Tropicana Juice), the juice is dispensed and balance updates correctly.
@@ -92,7 +93,8 @@ From the Vivado simulation:
 
 ### Waveform Example:
 
-![image](https://github.com/user-attachments/assets/8eb5994c-59a9-4e54-9402-6a8569ae67fc)
+![image](https://github.com/user-attachments/assets/2394580c-bb98-4835-930c-dce9e57852bc)
+
 
 
 
