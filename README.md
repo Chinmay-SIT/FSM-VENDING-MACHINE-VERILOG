@@ -61,8 +61,9 @@ funds via the extra_cash input.
 
 Figure 2: FSM State Diagram for the Vending Machine
 
- Verilog Module Implementation
-(i) Vending Machine Module (ven_machine1.v)
+## Verilog Module Implementation
+
+### (i) Vending Machine Module (ven_machine1.v)
 This is the core FSM-based module responsible for product dispensing and balance calculation.
 Inputs:
 •	money[4:0] – Amount inserted
@@ -73,7 +74,7 @@ Outputs:
 •	newspaper, cadbury_bar, tropicana_juice – Product outputs
 •	balance[4:0] – Returned balance
 
-(ii) Testbench (test_ven_machine1.v)
+### (ii) Testbench (test_ven_machine1.v)
 Used to simulate and verify behavior under different scenarios:
 •	Resetting the machine
 •	Inserting money
