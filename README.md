@@ -56,5 +56,29 @@ product.
 funds via the extra_cash input.
 ### DISPENSE_PRODUCT: Dispenses the chosen product once funds are validated.
 ### RETURN_BALANCE: Returns any extra amount inserted beyond the product cost.
-![image](https://github.com/user-attachments/assets/13441a3d-3068-4cfb-b995-a408b45a70a6) Figure 2: FSM State Diagram for the Vending Machine
+
+![image](https://github.com/user-attachments/assets/13441a3d-3068-4cfb-b995-a408b45a70a6) 
+
+Figure 2: FSM State Diagram for the Vending Machine
+
+ Verilog Module Implementation
+(i) Vending Machine Module (ven_machine1.v)
+This is the core FSM-based module responsible for product dispensing and balance calculation.
+Inputs:
+•	money[4:0] – Amount inserted
+•	select_product[1:0] – Chosen product
+•	extra_cash[4:0] – Additional money if needed
+•	clock, reset – System control signals
+Outputs:
+•	newspaper, cadbury_bar, tropicana_juice – Product outputs
+•	balance[4:0] – Returned balance
+
+(ii) Testbench (test_ven_machine1.v)
+Used to simulate and verify behavior under different scenarios:
+•	Resetting the machine
+•	Inserting money
+•	Selecting a product
+•	Adding extra cash
+The testbench mimics real user interactions, validating proper operation and state transitions of the FSM.
+
 
