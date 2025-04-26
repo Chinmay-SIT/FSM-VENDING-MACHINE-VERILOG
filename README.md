@@ -39,6 +39,7 @@ System Flow Overview
 To ensure a structured and predictable operation, the vending machine follows a predefined process.
 This is visualized in the flowchart below:
 ![image](https://github.com/user-attachments/assets/ebfe7f39-d151-486e-8df5-6ebebd5c22de)
+
 Figure 1: Vending Machine Operation Flowchart
 
 ## FSM-Based Control Logic
@@ -55,5 +56,6 @@ funds via the extra_cash input.
 ### DISPENSE_PRODUCT: Dispenses the chosen product once funds are validated.
 ### RETURN_BALANCE: Returns any extra amount inserted beyond the product cost.
 ![image](https://github.com/user-attachments/assets/13441a3d-3068-4cfb-b995-a408b45a70a6)
+
 Figure 2: FSM State Diagram for the Vending Machine
 
