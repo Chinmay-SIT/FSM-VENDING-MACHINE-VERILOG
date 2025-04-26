@@ -39,4 +39,21 @@ System Flow Overview
 To ensure a structured and predictable operation, the vending machine follows a predefined process.
 This is visualized in the flowchart below:
 ![image](https://github.com/user-attachments/assets/ebfe7f39-d151-486e-8df5-6ebebd5c22de)
+Figure 1: Vending Machine Operation Flowchart
+
+## FSM-Based Control Logic
+The core control logic of the vending machine is implemented as a Finite State Machine (FSM)
+using Verilog HDL. FSMs are ideal for designing systems with a well-defined number of states and
+transitions based on input conditions.
+FSM State Diagram
+The FSM for this vending machine includes the following major states:
+### IDLE: System waits for user input and resets internal variables.
+### CHECK_MONEY: Compares the inserted amount against the cost of the selected
+product.
+### WAIT_EXTRA: Activated if the inserted amount is insufficient; waits for additional
+funds via the extra_cash input.
+### DISPENSE_PRODUCT: Dispenses the chosen product once funds are validated.
+### RETURN_BALANCE: Returns any extra amount inserted beyond the product cost.
+![image](https://github.com/user-attachments/assets/13441a3d-3068-4cfb-b995-a408b45a70a6)
+Figure 2: FSM State Diagram for the Vending Machine
 
