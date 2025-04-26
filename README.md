@@ -38,7 +38,10 @@ payment methods such as NFC or QR code scanning.
 System Flow Overview
 To ensure a structured and predictable operation, the vending machine follows a predefined process.
 This is visualized in the flowchart below:
-![image](https://github.com/user-attachments/assets/ebfe7f39-d151-486e-8df5-6ebebd5c22de) Figure 1: Vending Machine Operation Flowchart
+
+![image](https://github.com/user-attachments/assets/ebfe7f39-d151-486e-8df5-6ebebd5c22de) 
+
+Figure 1: Vending Machine Operation Flowchart
 
 ## FSM-Based Control Logic
 The core control logic of the vending machine is implemented as a Finite State Machine (FSM)
